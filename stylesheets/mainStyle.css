@@ -1,0 +1,65 @@
+body{text-align:center;background-color:#efefef;}
+
+.mainTable{margin-left:auto;margin-right:auto;margin-top:30px;width:800px;height:600px;}
+.topFrame{width:800px;height:100px;background-color:silver;}
+.navFrame{width:140px;height:450px;vertical-align:top;background-color:#ffffff;}
+.mainFrame{width:650px;height:450px;vertical-align:top;background-color:#ffffff;}
+.rightFrame{width:10px;height:450px;background-color:#efefef;}
+.bottomFrame{width:800px;height:50px;background-color:silver;background-image:url(../img/border-right.gif);background-repeat:repeat-y;background-position:right;}
+
+.text{font-family:verdana;font-size:11px;color:black;}
+.text-bf{font-family:verdana;font-size:11px;color:black;font-weight:bold;}
+.description{font-family:verdana;font-size:11px;color:black;margin-bottom:10px;}
+.obligation{font-family:verdana;font-size:10px;color:red;padding-left:2px;}
+.warning{font-family:verdana;font-size:11px;color:#A22929;background-color:#F6A3A3;font-weight:bold;margin-top:10px;padding:10px;border:1px solid #dd0000;}
+.apply{font-family:verdana;font-size:11px;color:#006600;background-color:#BEE7BE;border:1px solid #006600;font-weight:bold;margin-top:10px;padding:10px;}
+
+
+.topic{width:120px;color:#eeeeee;font-family:verdana;font-size:10px;font-weight:bold;background-color:#336699;padding-left:5px;height:20px;vertical-align:middle;}
+.link a{padding:5px;border-bottom:1px #336699 solid;border-right:1px #336699 solid;border-left:1px #336699 solid;color:#003366;font-family:verdana;font-size:11px;font-weight:bold;text-decoration:none;display:block;background-color:#ffffff;}
+.link a:hover{background-color:#dddddd;}
+.systemlink a{padding:5px;border-bottom:1px #006699 solid;border-right:1px #006699 solid;border-left:1px #006699 solid;color:#003366;font-family:verdana;font-size:11px;font-weight:bold;text-decoration:none;display:block;background-color:#ffffff;}
+.systemlink a:hover{background-color:#ffcc99;}
+
+
+
+.contentMainTable{width:650px;}
+.seperator{width:10px;padding:0px;}
+
+
+.boxContent{width:290px;background-color:#cccccc;font-family:verdana;font-size:11px;}
+.boxHeadline{font-family:verdana;font-weight:bold;font-size:11px;width:290px;height:15px;background-color:#336699;color:#ADC6D6;}
+.boxHeadlineL{width:10px;height:15px;background-color:#336699;}
+.boxCornerTL{width:10px;height:10px;background-color:#cccccc;}
+.boxCornerTR{width:10px;height:10px;background-color:#cccccc;}
+.boxCornerBR{width:10px;height:10px;background-color:#cccccc;}
+.boxCornerBL{width:10px;height:10px;background-color:#cccccc;}
+.boxBorderT{width:290px;height:10px;background-color:#cccccc;}
+.boxBorderR{width:10px;background-color:#cccccc;}
+.boxBorderB{width:290px;height:10px;background-color:#cccccc;}
+.boxBorderL{width:10px;background-color:#cccccc;}
+
+
+.boxHelper{z-index:200;visibility:hidden;position:absolute;width:250px;background-color:#ffffcc;border:1px solid #333300;padding:5px;margin-left:100px;margin-top:10px;font-family:verdana;font-size:10px;}
+.boxHelper a{font-family:verdana;font-weight:bold;font-size:10px;width:10px;color:#333300;text-decoration:none;}
+.boxHelperSign{font-family:verdana;font-weight:bold;font-size:11px;width:10px;height:15px;background-color:#336699;color:#ADC6D6;}
+.boxHelperSign a{font-family:verdana;font-weight:bold;font-size:11px;width:10px;color:#ADC6D6;text-decoration:none;}
+.helpText{font-family:verdana;font-size:10px;color:#333300;width:240px;margin-bottom:10px;}
+.helpTextHeadline{font-family:verdana;font-weight:bold;font-size:11px;color:#333300;margin-bottom:10px;width:240px;}
+
+
+.basicInput{z-index:9;width:140px;font-family:verdana;font-size:11px;}
+.basicButton{font-family:verdana;font-size:11px;font-weight:bold;margin-top:10px;}
+.basicCheckbox{margin:0px;padding:0px;}
+
+.searchResult{margin:0px;padding:0px;}
+.searchResultItem{font-family:verdana;font-size:11px;vertical-align:middle;padding-top:3px;padding-bottom:3px;padding-left:10px;}
+.searchResultItem a{color:black;text-decoration:none;font-weight:bold;}
+.searchResultItem a:hover{color:black;}
+
+.navBorderL{width:10px;background-color:#efefef;}
+.navBorderR{width:10px;background-color:#ffffff;}
+.navBorderT{height:10px;background-color:blue;background-image:url(../img/border-top.gif);background-repeat:repeat-x;}
+.navBorderB{height:10px;background-color:silver;background-image:url(../img/border-bottom.gif);background-repeat:repeat-x;}
+.navSpacer{background-color:#C2D1E0;}
+.navSpacer2{background-color:#ffffff;height:1px;}

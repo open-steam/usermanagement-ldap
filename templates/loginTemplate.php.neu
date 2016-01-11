@@ -1,0 +1,181 @@
+<html>
+<head>
+	<title>bid-owl Benutzerverwaltung</title>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+	<style>
+	body {
+		font-family:  'Lucida Grande',Verdana,Arial,Helvetica,sans-serif;
+		font-size: 14px;
+		position: absolute;
+		left: 250px;
+		width: 400px;
+		background: #f6f6f6;
+		border-bottom: 1px solid #cdcdcd;
+		border-left: 1px solid #cdcdcd;
+		border-radius: 3px 3px 3px 3px;
+		border-right: 1px solid #cdcdcd;
+		color: #333333;
+	}
+
+	h1 {
+		background: #356fa1;
+		background: -moz-linear-gradient(center top , #7599bb, #356fa1) repeat scroll 0 0 transparent;
+		border: 1px solid #356fa1;
+		color: #ffffff;
+		font-size: 18px;
+		margin: -1px;
+		padding: 4px;
+	}
+
+	p {
+		background: #cccccc;
+		margin-top: 00px;
+		padding: 4px;
+	}
+
+	a, a:link, a:visited {
+		color: #396d9c;
+		text-decoration: none;	
+	}
+
+	.errorMsg {
+		color: ff0000;
+		font-weight: bold;
+		padding: 4px;
+	}
+
+	.label {
+		font-size: 14px;
+		width: 100px;
+	}
+
+	.field {
+		font-size: 14px;
+		width: 100px;
+	}
+
+	.button {
+		text-align: center;
+	}
+	</style>
+</head>
+<body>
+
+<h1>Benutzerverwaltung</h1>
+
+<?php
+if(($this->auth != null) AND ($this->auth == 'error')){
+	echo '<p class="errorMsg">';
+	if($this->errorMsg != null) echo $this->errorMsg;
+	echo '</p>';
+}
+?>	
+
+<form method=post action="index.php" name="loginForm" method="get">
+
+<table>
+<tr>
+	<td class="label">Benutzername:</td>
+	<td class="field"><input type="text" name="username"></td>
+</tr>
+<tr>
+	<td class="label">Kennwort:</td>
+	<td class="field"><input type="password" name="userpassword"></td>
+</tr>
+<tr>
+	<td></td>
+	<td class="button"> <input type="hidden" name=time value=<?php echo ''.time(); ?>><input type="submit" name="cmd" value="Anmelden"></td>
+</tr>
+</table>
+
+</form>
+
+<p>Weiter zur neuen Oberfl&auml;che:</p>
+<ul>
+	<li><a href="http://www.neu.bid-owl.de/">bid-owl</a></li>
+	<li><a href="http://www.neu.schulen-gt.de/">schulen-gt</a></li>
+</ul>
+
+<p>Weiter zur alten Oberfl&auml;che:</p>
+<ul>
+	<li><a href="http://www.bid-owl.de/">bid-owl</a></li>
+	<li><a href="http://www.schulen-gt.de/">schulen-gt</a></li>
+</ul>
+
+<!--
+	<form method=post action="index.php" name="loginForm" method="get">
+		<table cellpadding="0" cellspacing="0" border="0" style="width:200px;margin-left:auto;margin-right:auto;margin-top:100px;background-color:silver;">
+			<tr><td colspan=2>
+				<table cellpadding="0" cellspacing="0" border="0" style="width:200px;">
+				<tr>
+					<td style="width:10px;height:10px;"><img src="img/corner-tl.gif"></td>
+					<td style="width:180px;height:10px;background-color:silver;background-image:url(img/border-top.gif);background-repeat:repeat-x;"><img src="img/border-top.gif"></td>
+					<td style="width:10px;height:10px;"><img src="img/corner-tr.gif"></td>
+				</tr>
+				</table>
+			</td></tr>
+			<tr><td colspan=2>
+				<table cellpadding="0" cellspacing="0" border="0" style="width:200px;">
+				<tr>
+					<td style="width:10px;background-image:url(img/border-left.gif);background-repeat:repeat-y;"></td>
+					<td style="width:180px;background-color:silver;font-family:verdana;font-size:12px;font-weight:bold;text-align:center;padding-bottom:5px;">Benutzerverwaltung</td>
+					<td style="width:10px;background-image:url(img/border-right.gif);background-repeat:repeat-y;"></td>
+				</tr>
+				
+			<?php
+				if(($this->auth != null) AND ($this->auth == 'error')){
+				echo '<tr>';
+					echo '<td style="width:10px;background-image:url(img/border-left.gif);background-repeat:repeat-y;"></td>';
+					echo '<td style="width:180px;background-color:silver;font-family:verdana;font-size:10px;color:red;font-weight:bold;text-align:left;padding-bottom:5px;"><img src="img/important.gif" style="float:left;border:none;width:10px;height:40px;padding-right:5px;">';
+					if($this->errorMsg != null) echo $this->errorMsg;
+					echo '</td>';
+					echo '<td style="width:10px;background-image:url(img/border-right.gif);background-repeat:repeat-y;"></td>';
+				echo '</tr>';		
+				}
+			?>	
+				</table>
+			</td></tr>	
+			<tr>
+				<td style="font-size:10px;font-weight:bold;padding-left:10px;background-image:url(img/border-left.gif);background-repeat:repeat-y;background-position:left;">Benutzername:</td>
+				<td style="text-align:right;padding-right:10px;background-image:url(img/border-right.gif);background-repeat:repeat-y;background-position:right;"><input type="text" name="username" style="width:80px;font-size:10px;"></td>
+			</tr>
+			<tr>
+				<td style="font-size:10px;font-weight:bold;padding-left:10px;background-image:url(img/border-left.gif);background-repeat:repeat-y;background-position:left;">Kennwort:</td>
+				<td style="text-align:right;padding-right:10px;background-image:url(img/border-right.gif);background-repeat:repeat-y;background-position:right;"><input type="password" name="userpassword" style="width:80px;font-size:10px;"></td>
+			</tr>
+			<tr><td colspan=2>
+				<table cellpadding="0" cellspacing="0" border="0" style="width:200px;">
+				<tr>
+					<td style="width:10px;background-image:url(img/border-left.gif);background-repeat:repeat-y;background-position:left;"></td>
+					<td style="width:180px;background-color:silver;text-align:center;"><input type="hidden" name=time value=<?php echo ''.time(); ?>><input type="submit" name="cmd" value="login" style="font-size:10px;font-weight:bold;margin-top:5px;"></td>
+					<td style="width:10px;background-image:url(img/border-right.gif);background-repeat:repeat-y;background-position:right;"></td>
+				</tr>
+				</table>
+			</td></tr>			
+			<tr><td colspan=2>
+				<table cellpadding="0" cellspacing="0" border="0" style="width:200px;">
+				<tr>
+					<td style="width:10px;background-image:url(img/border-left.gif);background-repeat:repeat-y;background-position:left;"></td>
+					<td style="width:180px;background-color:silver;font-family:verdana;font-size:12px;font-weight:bold;text-
+					align:center;padding-bottom:5px;">Weiter zur alten Oberfläche von <ul><li><a href="http://www.bid-owl.de/index.html">bid-owl</a></li><li><a href="http://www.schulen-gt.de/index.html">schulen-gt</a></li></ul></td>
+					<td style="width:10px;background-image:url(img/border-right.gif);background-repeat:repeat-y;background-position:right;"></td>
+				</tr>
+				</table>
+			<tr><td colspan=2>
+				<table cellpadding="0" cellspacing="0" border="0" style="width:200px;">
+				<tr>
+					<td style="width:10px;height:10px;"><img src="img/corner-bl.gif"></td>
+					<td style="width:180px;height:10px;background-color:silver;background-image:url(img/border-bottom.gif);background-repeat:repeat-x;"></td>
+					<td style="width:10px;height:10px;"><img src="img/corner-br.gif"></td>
+				</tr>
+				</table>
+			</td></tr>
+			
+		</table>
+	</form>
+
+-->
+
+</body>
+</html>

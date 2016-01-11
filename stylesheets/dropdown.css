@@ -1,0 +1,58 @@
+/* common styling */
+.menu {	font-family: verdana;
+		width:140px; 
+		position:absolute;
+		margin:0px; 
+		padding:0px;
+		font-size:11px; 
+	 	margin-left:5px;
+	 	margin-top:-10px;
+		z-index:100;
+		float:right;
+}
+.menu ul li a, .menu ul li a:visited {	
+		display:block;
+		text-decoration:none; 
+		color:#000;
+		width:134px; 
+		text-align:left;
+		border:1px solid #6699cc; 
+		background:#ffffff; 
+		font-size:11px; 
+		overflow:hidden;
+		padding-left:4px;
+		
+
+}
+.menu ul {
+		padding:0px; 
+		margin:0px;
+		list-style-type: none; 
+}
+.menu ul li {
+		float:left; 
+		
+		position:relative;
+}
+.menu ul li ul {
+		display: none;
+}
+
+.menu ul li a.hide, .menu ul li a:visited.hide {display:block;height:15px;padding-top:2px;}
+.menu ul li a:hover ul li a.hide {display:none;}
+.menu ul li a:hover {color:#000; background:#fff;font-weight:bold;}
+.menu ul li a:hover ul {display:block; position:absolute;width:140px;}
+.menu ul li a:hover ul li a {display:block; background:#ddd; color:#000;padding:0px;}
+
+.defaultElement {width:138px;border-left:1px solid #6699cc;border-right:1px solid #6699cc;overflow:hidden;background:#ffffff;}
+.bottomElement {width:138px;border-left:1px solid #6699cc;border-right:1px solid #6699cc;border-bottom:1px solid #6699cc;overflow:hidden;background:#ffffff;}
+
+
+
+
+
+
+
+
+
+

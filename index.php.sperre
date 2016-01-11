@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+	<head>
+	<style type="text/css">
+
+	body {
+		color: #07214e;
+		padding: 0px;
+		margin: 0px;
+		background-repeat: repeat-x;
+		background-image: url(http://bid-owl.de/static/notifications/background.jpg);
+	}
+
+	.content {
+		font-size: 14px;
+		font-family: Helvetica, Verdana, Arial, sans-serif;
+		padding-top: 60px;
+		background-image: url(http://bid-owl.de/static/notifications/background_white.png);
+		height: 100%;
+		width: 620px;
+	}
+
+	a {
+		text-decoration: none;
+		color: #757877;
+	}
+
+	</style>
+		<title>bid-owl | Bildungsserver</title>
+	</head>
+	<body>
+	
+	<center>
+		<div class="content">
+			<img src="http://bid-owl.de/static/notifications/bid_logo.png" alt="bid-owl logo" width="400" height="150"/>
+			<br/><br/><br/>
+			<b>Die Benutzerverwaltung ist im Moment nicht verf&uuml;gbar.</b><br/>
+			<br/>
+			<br/>
+			<a href="http://www.bid-owl.de">http://www.bid-owl.de</a><br/><br/><br/>
+			<br />
+		</div>
+		<img src="http://bid-owl.de/static/notifications/background_white_bt.png" alt="" width="620" height="58"/>
+	</center>
+	
+	</body>
+</html>

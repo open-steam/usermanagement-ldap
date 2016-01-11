@@ -1,0 +1,11 @@
+.menu {margin-left:-140px;}
+
+.menu ul li a.hide, .menu ul li a:visited.hide {display:block;height:18px;padding-top:1px;}
+
+.menu ul li a, .menu ul li a:visited {	
+		width:140px; 
+		padding-left:4px;
+}
+
+.defaultElement {width:140px;}
+.bottomElement {width:140px;}
